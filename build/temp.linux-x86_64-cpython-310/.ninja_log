@@ -1,0 +1,3 @@
+# ninja log v5
+1	20889	1715748614412474171	/root/dehaze-involution/build/temp.linux-x86_64-cpython-310/csrc/involution_kernel_cpp.o	752e124685a273f6
+0	58800	1715748652329607459	/root/dehaze-involution/build/temp.linux-x86_64-cpython-310/csrc/involution_kernel.o	ab610da6f2fc1d35

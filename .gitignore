@@ -1,1 +1,6 @@
 /dataset/foggy_cityscape/
+/build/
+/dist/
+/involution_cuda.egg-info/
+/dataset/.ipynb_checkpoints/
+/dataset/__pycache__/

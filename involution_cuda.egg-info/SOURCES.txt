@@ -1,0 +1,8 @@
+README.md
+setup.py
+csrc/involution_kernel.cu
+csrc/involution_kernel_cpp.cpp
+involution_cuda.egg-info/PKG-INFO
+involution_cuda.egg-info/SOURCES.txt
+involution_cuda.egg-info/dependency_links.txt
+involution_cuda.egg-info/top_level.txt
