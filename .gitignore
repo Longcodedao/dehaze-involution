@@ -4,3 +4,7 @@
 /involution_cuda.egg-info/
 /dataset/.ipynb_checkpoints/
 /dataset/__pycache__/
+/models/.ipynb_checkpoints/
+/models/__pycache__/
+/.ipynb_checkpoints/
+/csrc/.ipynb_checkpoints/
