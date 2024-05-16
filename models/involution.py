@@ -124,7 +124,7 @@ class Involution_CUDA(nn.Module):
         self.stride = stride
 
         reduction_ratio = 4
-        self.group_channels = 1
+        self.group_channels = 16
         self.groups = channels // self.group_channels
 
         self.conv1 = ConvModule(in_channels = channels,

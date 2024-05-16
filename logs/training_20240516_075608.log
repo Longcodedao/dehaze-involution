@@ -1,0 +1,178 @@
+2024-05-16 07:59:37,266 - INFO - Epoch 1/100
+2024-05-16 07:59:37,266 - INFO - Train Loss: 0.0579, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 08:03:05,884 - INFO - Epoch 2/100
+2024-05-16 08:03:05,884 - INFO - Train Loss: 0.0215, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 08:06:34,568 - INFO - Epoch 3/100
+2024-05-16 08:06:34,569 - INFO - Train Loss: 0.0149, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 08:10:03,252 - INFO - Epoch 4/100
+2024-05-16 08:10:03,253 - INFO - Train Loss: 0.0118, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 08:13:32,021 - INFO - Epoch 5/100
+2024-05-16 08:13:32,021 - INFO - Train Loss: 0.0101, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 08:17:00,732 - INFO - Epoch 6/100
+2024-05-16 08:17:00,732 - INFO - Train Loss: 0.0099, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 08:20:29,361 - INFO - Epoch 7/100
+2024-05-16 08:20:29,361 - INFO - Train Loss: 0.0096, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 08:23:57,919 - INFO - Epoch 8/100
+2024-05-16 08:23:57,920 - INFO - Train Loss: 0.0087, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 08:27:26,880 - INFO - Epoch 9/100
+2024-05-16 08:27:26,880 - INFO - Train Loss: 0.0080, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 08:30:55,694 - INFO - Epoch 10/100
+2024-05-16 08:30:55,694 - INFO - Train Loss: 0.0077, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 08:34:24,429 - INFO - Epoch 11/100
+2024-05-16 08:34:24,430 - INFO - Train Loss: 0.0074, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 08:37:53,249 - INFO - Epoch 12/100
+2024-05-16 08:37:53,249 - INFO - Train Loss: 0.0069, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 08:41:22,087 - INFO - Epoch 13/100
+2024-05-16 08:41:22,087 - INFO - Train Loss: 0.0065, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 08:44:50,828 - INFO - Epoch 14/100
+2024-05-16 08:44:50,828 - INFO - Train Loss: 0.0064, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 08:48:19,773 - INFO - Epoch 15/100
+2024-05-16 08:48:19,773 - INFO - Train Loss: 0.0063, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 08:51:48,536 - INFO - Epoch 16/100
+2024-05-16 08:51:48,536 - INFO - Train Loss: 0.0060, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 08:55:17,227 - INFO - Epoch 17/100
+2024-05-16 08:55:17,228 - INFO - Train Loss: 0.0057, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 08:58:45,893 - INFO - Epoch 18/100
+2024-05-16 08:58:45,893 - INFO - Train Loss: 0.0057, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 09:02:14,552 - INFO - Epoch 19/100
+2024-05-16 09:02:14,552 - INFO - Train Loss: 0.0055, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 09:05:43,480 - INFO - Epoch 20/100
+2024-05-16 09:05:43,481 - INFO - Train Loss: 0.0052, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 09:09:12,301 - INFO - Epoch 21/100
+2024-05-16 09:09:12,301 - INFO - Train Loss: 0.0051, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 09:12:41,194 - INFO - Epoch 22/100
+2024-05-16 09:12:41,194 - INFO - Train Loss: 0.0049, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 09:16:10,048 - INFO - Epoch 23/100
+2024-05-16 09:16:10,049 - INFO - Train Loss: 0.0048, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 09:19:38,884 - INFO - Epoch 24/100
+2024-05-16 09:19:38,885 - INFO - Train Loss: 0.0047, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 09:23:07,726 - INFO - Epoch 25/100
+2024-05-16 09:23:07,726 - INFO - Train Loss: 0.0047, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 09:26:36,705 - INFO - Epoch 26/100
+2024-05-16 09:26:36,705 - INFO - Train Loss: 0.0044, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 09:30:05,479 - INFO - Epoch 27/100
+2024-05-16 09:30:05,479 - INFO - Train Loss: 0.0044, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 09:33:34,421 - INFO - Epoch 28/100
+2024-05-16 09:33:34,421 - INFO - Train Loss: 0.0043, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 09:37:03,264 - INFO - Epoch 29/100
+2024-05-16 09:37:03,264 - INFO - Train Loss: 0.0042, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 09:40:32,138 - INFO - Epoch 30/100
+2024-05-16 09:40:32,138 - INFO - Train Loss: 0.0041, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 09:44:01,037 - INFO - Epoch 31/100
+2024-05-16 09:44:01,037 - INFO - Train Loss: 0.0039, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 09:47:29,937 - INFO - Epoch 32/100
+2024-05-16 09:47:29,937 - INFO - Train Loss: 0.0039, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 09:50:58,733 - INFO - Epoch 33/100
+2024-05-16 09:50:58,733 - INFO - Train Loss: 0.0038, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 09:54:27,583 - INFO - Epoch 34/100
+2024-05-16 09:54:27,583 - INFO - Train Loss: 0.0036, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 09:57:56,439 - INFO - Epoch 35/100
+2024-05-16 09:57:56,439 - INFO - Train Loss: 0.0036, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 10:01:25,273 - INFO - Epoch 36/100
+2024-05-16 10:01:25,274 - INFO - Train Loss: 0.0036, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 10:04:53,971 - INFO - Epoch 37/100
+2024-05-16 10:04:53,971 - INFO - Train Loss: 0.0035, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 10:08:22,753 - INFO - Epoch 38/100
+2024-05-16 10:08:22,753 - INFO - Train Loss: 0.0035, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 10:11:51,298 - INFO - Epoch 39/100
+2024-05-16 10:11:51,299 - INFO - Train Loss: 0.0034, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 10:15:20,163 - INFO - Epoch 40/100
+2024-05-16 10:15:20,164 - INFO - Train Loss: 0.0034, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 10:18:48,937 - INFO - Epoch 41/100
+2024-05-16 10:18:48,937 - INFO - Train Loss: 0.0033, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 10:22:17,847 - INFO - Epoch 42/100
+2024-05-16 10:22:17,847 - INFO - Train Loss: 0.0033, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 10:25:46,567 - INFO - Epoch 43/100
+2024-05-16 10:25:46,567 - INFO - Train Loss: 0.0031, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 10:29:15,333 - INFO - Epoch 44/100
+2024-05-16 10:29:15,334 - INFO - Train Loss: 0.0032, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 10:32:44,114 - INFO - Epoch 45/100
+2024-05-16 10:32:44,114 - INFO - Train Loss: 0.0031, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 10:36:13,114 - INFO - Epoch 46/100
+2024-05-16 10:36:13,114 - INFO - Train Loss: 0.0029, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 10:39:42,027 - INFO - Epoch 47/100
+2024-05-16 10:39:42,027 - INFO - Train Loss: 0.0029, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 10:43:10,970 - INFO - Epoch 48/100
+2024-05-16 10:43:10,970 - INFO - Train Loss: 0.0029, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 10:46:39,827 - INFO - Epoch 49/100
+2024-05-16 10:46:39,828 - INFO - Train Loss: 0.0028, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 10:50:08,632 - INFO - Epoch 50/100
+2024-05-16 10:50:08,633 - INFO - Train Loss: 0.0028, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 10:53:37,336 - INFO - Epoch 51/100
+2024-05-16 10:53:37,336 - INFO - Train Loss: 0.0028, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 10:57:06,261 - INFO - Epoch 52/100
+2024-05-16 10:57:06,261 - INFO - Train Loss: 0.0027, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 11:00:35,128 - INFO - Epoch 53/100
+2024-05-16 11:00:35,129 - INFO - Train Loss: 0.0027, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 11:04:03,791 - INFO - Epoch 54/100
+2024-05-16 11:04:03,791 - INFO - Train Loss: 0.0026, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 11:07:32,727 - INFO - Epoch 55/100
+2024-05-16 11:07:32,727 - INFO - Train Loss: 0.0027, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 11:11:01,393 - INFO - Epoch 56/100
+2024-05-16 11:11:01,394 - INFO - Train Loss: 0.0025, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 11:14:30,265 - INFO - Epoch 57/100
+2024-05-16 11:14:30,266 - INFO - Train Loss: 0.0025, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 11:17:59,038 - INFO - Epoch 58/100
+2024-05-16 11:17:59,038 - INFO - Train Loss: 0.0026, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 11:21:27,777 - INFO - Epoch 59/100
+2024-05-16 11:21:27,778 - INFO - Train Loss: 0.0024, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 11:24:56,553 - INFO - Epoch 60/100
+2024-05-16 11:24:56,553 - INFO - Train Loss: 0.0024, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 11:28:25,392 - INFO - Epoch 61/100
+2024-05-16 11:28:25,392 - INFO - Train Loss: 0.0023, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 11:31:54,130 - INFO - Epoch 62/100
+2024-05-16 11:31:54,130 - INFO - Train Loss: 0.0023, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 11:35:22,864 - INFO - Epoch 63/100
+2024-05-16 11:35:22,864 - INFO - Train Loss: 0.0023, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 11:38:51,618 - INFO - Epoch 64/100
+2024-05-16 11:38:51,618 - INFO - Train Loss: 0.0023, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 11:42:20,415 - INFO - Epoch 65/100
+2024-05-16 11:42:20,415 - INFO - Train Loss: 0.0021, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 11:45:49,162 - INFO - Epoch 66/100
+2024-05-16 11:45:49,162 - INFO - Train Loss: 0.0023, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 11:49:17,899 - INFO - Epoch 67/100
+2024-05-16 11:49:17,899 - INFO - Train Loss: 0.0021, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 11:52:46,638 - INFO - Epoch 68/100
+2024-05-16 11:52:46,638 - INFO - Train Loss: 0.0022, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 11:56:15,358 - INFO - Epoch 69/100
+2024-05-16 11:56:15,358 - INFO - Train Loss: 0.0022, Val Loss: 21768550977254127235632201728.0000, PSNR: -13.404056549072266, SSIM: 0.849030201971843
+2024-05-16 11:59:44,060 - INFO - Epoch 70/100
+2024-05-16 11:59:44,060 - INFO - Train Loss: 0.0020, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 12:03:12,724 - INFO - Epoch 71/100
+2024-05-16 12:03:12,724 - INFO - Train Loss: 0.0021, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 12:06:41,514 - INFO - Epoch 72/100
+2024-05-16 12:06:41,515 - INFO - Train Loss: 0.0020, Val Loss: inf, PSNR: -inf, SSIM: 0.8596281261617289
+2024-05-16 12:10:10,222 - INFO - Epoch 73/100
+2024-05-16 12:10:10,223 - INFO - Train Loss: 0.0020, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 12:13:39,076 - INFO - Epoch 74/100
+2024-05-16 12:13:39,076 - INFO - Train Loss: 0.0019, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 12:17:07,978 - INFO - Epoch 75/100
+2024-05-16 12:17:07,979 - INFO - Train Loss: 0.0020, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 12:20:36,920 - INFO - Epoch 76/100
+2024-05-16 12:20:36,920 - INFO - Train Loss: 0.0020, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 12:24:05,849 - INFO - Epoch 77/100
+2024-05-16 12:24:05,850 - INFO - Train Loss: 0.0019, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 12:27:34,756 - INFO - Epoch 78/100
+2024-05-16 12:27:34,756 - INFO - Train Loss: 0.0019, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 12:31:03,660 - INFO - Epoch 79/100
+2024-05-16 12:31:03,660 - INFO - Train Loss: 0.0018, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 12:34:32,443 - INFO - Epoch 80/100
+2024-05-16 12:34:32,443 - INFO - Train Loss: 0.0018, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 12:38:01,122 - INFO - Epoch 81/100
+2024-05-16 12:38:01,122 - INFO - Train Loss: 0.0018, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 12:41:29,897 - INFO - Epoch 82/100
+2024-05-16 12:41:29,897 - INFO - Train Loss: 0.0018, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 12:44:58,679 - INFO - Epoch 83/100
+2024-05-16 12:44:58,680 - INFO - Train Loss: 0.0017, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 12:48:27,588 - INFO - Epoch 84/100
+2024-05-16 12:48:27,589 - INFO - Train Loss: 0.0018, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 12:51:56,454 - INFO - Epoch 85/100
+2024-05-16 12:51:56,454 - INFO - Train Loss: 0.0018, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 12:55:25,303 - INFO - Epoch 86/100
+2024-05-16 12:55:25,303 - INFO - Train Loss: 0.0017, Val Loss: nan, PSNR: nan, SSIM: nan
+2024-05-16 12:58:54,126 - INFO - Epoch 87/100
+2024-05-16 12:58:54,126 - INFO - Train Loss: 0.0017, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 13:02:22,896 - INFO - Epoch 88/100
+2024-05-16 13:02:22,897 - INFO - Train Loss: 0.0017, Val Loss: inf, PSNR: -inf, SSIM: nan
+2024-05-16 13:05:51,652 - INFO - Epoch 89/100
+2024-05-16 13:05:51,653 - INFO - Train Loss: 0.0016, Val Loss: inf, PSNR: -inf, SSIM: nan
