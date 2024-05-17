@@ -1,4 +1,6 @@
 dataset/foggy_cityscape/
+dataset/Dense-HAZE/
+dataset/O-HAZE/
 build/
 dist/
 involution_cuda.egg-info/

@@ -35,3 +35,4 @@ class FoggyCityscape(Dataset):
             clean_image = self.transform(clean_image)
             
         return haze_image, clean_image
+
