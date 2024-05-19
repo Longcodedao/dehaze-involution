@@ -61,7 +61,7 @@ class BottleNeck_Long(nn.Module):
         super(BottleNeck_Long, self).__init__()
         self.invblock = nn.Sequential(
             Involution_CUDA(in_channels, kernel_size = inv_kernel, stride = 1),
-            LayerNorm(in_channels),
+            LayerNorm(in_channels, data_format = "channels_first"),
             nn.GELU()
         )
 
@@ -72,7 +72,7 @@ class BottleNeck_Long(nn.Module):
                       stride = 1,
                       padding = 0,
                       bias = False),
-            LayerNorm(out_channels),
+            LayerNorm(out_channels, data_format = "channels_first"),
         )   
 
         self.mapping=nn.Sequential(
@@ -80,7 +80,7 @@ class BottleNeck_Long(nn.Module):
                       out_channels = out_channels,
                       kernel_size = 1,
                       padding = 0),
-            LayerNorm(out_channels))
+            LayerNorm(out_channels, data_format = "channels_first"))
         
         self.gelu = nn.GELU()
 
@@ -149,37 +149,30 @@ class UNET_Long(nn.Module):
         
     def forward(self,x):
         skip_connections=[]
-        print("Encoder")
+        # print("Encoder")
         x = self.warmup_conv(x)
-        print(x.shape)
-
+        # print(x.shape)
     
         for i in range(0, len(self.downs)):
             x = self.downs[i](x)
-
             if i % 2 == 0:
                 skip_connections.append(x)
-                print("Involution Block:", x.shape)
-            else:
-                print("Downsample:", x.shape)
-
-
             
         x = self.bottle_neck(x)
         skip_connections = skip_connections[::-1]
-        print(f"After Bottleneck: ", x.shape)
+        # print(f"After Bottleneck: ", x.shape)
 
-        print("Decoder")
+        # print("Decoder")
         for i in range(0, len(self.ups), 2):
 
             x = self.ups[i](x)
-            print(f"Upsample: ", x.shape)
+            # print(f"Upsample: ", x.shape)
             skip_connection = skip_connections[i//2]
             if x.shape != skip_connection.shape:
                 x = TF.resize(x, skip_connection.shape[2::], antialias=True)
 
             concat_skip = torch.cat((skip_connection,x),dim=1)
             x = self.ups[i+1](concat_skip)
-            print(f"Involution Block: ", x.shape)
+            # print(f"Involution Block: ", x.shape)
 
         return self.final_layer(x)
