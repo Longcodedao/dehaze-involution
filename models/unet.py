@@ -121,14 +121,3 @@ class UNET(nn.Module):
             x = self.ups[i+1](concat_skip)
 
         return self.final_layer(x)
-
-
-class RMSNorm(nn.Module):
-    def __init__(self, dim):
-        super().__init__()
-        self.scale = dim ** 0.5
-        self.gamma = nn.Parameter(torch.ones(dim))
-
-    def forward(self, x):
-        # Normalize across the channel dimension
-        return F.normalize(x, dim=1) * self.scale * self.gamma.view(1, -1, 1, 1)
