@@ -1,13 +1,15 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from .involution import Involution_CUDA
+from .involution import Involution_CUDA, Involution
 
 import torchvision.transforms.functional as TF
 
 class UNET_block(nn.Module):
-    def __init__(self, in_channels, out_channels):
+    def __init__(self, in_channels, out_channels, use_cuda = True):
         super(UNET_block,self).__init__()
+
+        self.involution_block = Involution_CUDA if use_cuda else Involution
         self.convblock = nn.Sequential(
             nn.Conv2d(in_channels = in_channels,
                       out_channels = out_channels,
@@ -18,9 +20,9 @@ class UNET_block(nn.Module):
             nn.GELU()
 
         )
-        
+            
         self.involution = nn.Sequential(
-            Involution_CUDA(out_channels, kernel_size = 7, stride = 1),
+            self.involution_block(out_channels, kernel_size = 7, stride = 1),
             nn.BatchNorm2d(out_channels),
             nn.GELU())
         
@@ -66,7 +68,7 @@ def unet_block(in_channels, out_channels):
 
 class UNET(nn.Module):
     def __init__(self, in_channels = 3, out_channels = 1, 
-                 features = [64, 128, 256, 512], device = 'cpu'):
+                 features = [64, 128, 256, 512], device = 'cpu', use_cuda = True):
         super().__init__()
         self.in_channels = in_channels
         in_channels_temp = in_channels
@@ -79,13 +81,15 @@ class UNET(nn.Module):
                                      kernel_size = 1)
         
         self.bottle_neck = UNET_block(in_channels = features[-1],
-                                      out_channels = features[-1] * 2)
+                                      out_channels = features[-1] * 2,
+                                     use_cuda = use_cuda)
         
         # down
         for feature in features:
             self.downs.append(
                 UNET_block(in_channels_temp,
-                           out_channels = feature))
+                           out_channels = feature,
+                          use_cuda = use_cuda))
             in_channels_temp = feature
             
             # Instead of using AvgPool2D
@@ -103,7 +107,8 @@ class UNET(nn.Module):
                 out_channels = feature, 
                 kernel_size = 2, stride = 2))
             self.ups.append(UNET_block(in_channels = feature * 2, 
-                                       out_channels = feature))
+                                       out_channels = feature,
+                                      use_cuda = use_cuda))
 
         self.device = device
 
