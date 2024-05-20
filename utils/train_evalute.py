@@ -4,6 +4,7 @@ import datetime
 import os 
 from .metrics import psnr 
 from skimage.metrics import structural_similarity as ssim
+import matplotlib.pyplot as plt
 
 def train_per_epoch(model, train_loader, criterion, 
                     optimizer, device, epoch, num_epochs):
@@ -134,3 +135,49 @@ def train_and_evaluate(model, train_loader, val_loader, criterion, optimizer,
         print(f"Model saved as {model_path}")
     
     return history
+
+
+
+def inference_lol(test_dataset, model, 
+                  model_path = './weights/model_NHHAZE_20240517_084723.pth', device = 'cuda',
+                  length = 10):
+
+    for i in range(length):
+        haze_image, clean_image = test_dataset[i]
+        haze_image, clean_image = haze_image.to(device), clean_image.to(device)
+        
+        model = model.to(device)
+        model.load_state_dict(torch.load(model_path))
+        
+        with torch.no_grad():
+            denoised_image = model(haze_image.unsqueeze(0).cuda())
+            print(f"PSNR:{psnr(denoised_image, clean_image.to(device))}")
+        
+        
+        # Convert PyTorch tensors to numpy arrays
+        haze_np = haze_image.permute(1, 2, 0).cpu().numpy()  # Assuming haze_image is a PyTorch tensor
+        denoised_np = denoised_image.squeeze().permute(1, 2, 0).cpu().numpy()  # Assuming denoised_image is a PyTorch tensor
+        clean_np = clean_image.squeeze().permute(1, 2, 0).cpu().numpy()  # Assuming clean_image is a PyTorch tensor
+        
+        # Calculate SSIM
+        ssim_value = ssim(denoised_np, clean_np, 
+                          multichannel = True, channel_axis = -1, data_range = 1)
+         # Assuming images are in RGB format
+        print(f"SSIM: {ssim_value}")
+        
+        # Plot the haze image, denoised image, and clean image
+        fig, axes = plt.subplots(1, 3, figsize=(10, 5))
+        
+        axes[0].imshow(haze_np)
+        axes[0].set_title('Haze Image')
+        axes[0].axis('off')
+        
+        axes[1].imshow(denoised_np)
+        axes[1].set_title('Denoised Image')
+        axes[1].axis('off')
+        
+        axes[2].imshow(clean_np)
+        axes[2].set_title('Clean Image')
+        axes[2].axis('off')
+        
+        plt.show()
